@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6920341232732247"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Digital Minds Uganda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfbf7;
+            color: #1f2937;
+        }
+p.auto-style4{
+	text-align: center;
+}
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+
+        .interactive-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .interactive-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .active-tab {
+            background-color: #4f46e5;
+            color: white;
+        }
+        .inactive-tab {
+            background-color: white;
+            color: #4b5563;
+        }
+        .inactive-tab:hover {
+            background-color: #f3f4f6;
+        }
+    .auto-style1 {
+		font-family: "Bernard MT Condensed";
+	}
+    .auto-style2 {
+		border-width: 0px;
+	}
+    .auto-style3 {
+		text-align: center;
+	}
+	.auto-style4 {
+		text-align: right;
+	}
+    .auto-style5 {
+	color: #F12C2C;
+	background-color: #F3EEA9;
+}
+    </style>
+    <!-- Chosen Palette: "Modern Digital Africa" - Warm Neutral Background (#fdfbf7) with Indigo/Blue brands colors for trust and technology, accented with Slate for text. -->
+    <!-- Application Structure Plan: A Dashboard-style Single Page Application. 
+         1. Hero Section: Sets the mission and context (Edutainment).
+         2. Interactive Tabs Navigation: Allows users to switch between the four core pillars of the blueprint (Architecture, Content Engine, Monetization, Compliance).
+         3. Dynamic Content Area: 
+            - Architecture: Interactive flow diagram explaining the Tech Stack.
+            - Content: Charts showing content types and the 'Trending' algorithm logic.
+            - Monetization: A calculator/simulator for subscription savings and payment method breakdown (Global vs Local).
+            - Compliance: A data safety overview.
+         This structure was chosen to break down the dense technical blueprint into consumable, interactive modules that allow stakeholders to visualize the platform's mechanics. -->
+    <!-- Visualization & Content Choices:
+         1. Architecture Flow (HTML/CSS/JS): Clickable blocks representing the server/database flow. Goal: Explain the backend process. Justification: Better than static text.
+         2. Trending Metrics (Chart.js Bar): Visualizing how 'Trending' is calculated (Views/Likes/Shares). Goal: Explain the algorithm.
+         3. Subscription Savings (Chart.js Line): Showing the cost benefit of the Annual plan. Goal: Sell the monetization strategy.
+         4. Payment Methods (Chart.js Doughnut): Breakdown of payment providers (MTN/Airtel vs Stripe). Goal: Show financial inclusivity.
+         5. Transcoding Demo (JS/HTML): A simulated resolution switcher. Goal: Demonstrate the 'Mobile Friendliness' feature.
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+</head>
+<body class="flex flex-col min-h-screen">
+
+  
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <img alt="company logo" height="auto" src="images/digital%20minds%20Uganda%20vvv.png" width="150">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         
+            <span class="font-bold text-xl text-indigo-900 tracking-tight">
+            </span><h1 class="auto-style1">Digital Minds Uganda
+                
+            </h1>
+                
+            <div class="flex justify-between h-16">
+                                    
+
+					
+					
+                <div class="auto-style4">
+                  
+                  <p class="auto-style4">
+                    <a href="#dashboard"><span class="auto-style5">HOME</span></a>
+					<a href=BLOG.html><span class="auto-style5">BLOG</span></a>
+					<a href=CONTACT.html><span class="auto-style5">CONTACT US</span></a>
+				<a href="community.html"><span class="auto-style5">COMMUNITY TALK</span></a></p></div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="bg-indigo-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-block bg-indigo-800 rounded-full px-4 py-1 text-sm font-semibold mb-4">Edutainment platform</div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Bridging Entertainment & Education for a Global Audience</h1>
+                <p class="text-indigo-100 text-lg mb-8">
+                    A comprehensive technical and strategic plan for Uganda's next-gen digital platform. 
+                    Explore the architecture, monetization models, and content ecosystem below.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main id="dashboard" class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        
+        <div class="mb-10 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Interactive Strategy Dashboard</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Navigate through the core pillars of the Digital Minds platform. Use the interactive modules below to explore technical diagrams, financial projections, and content logic.
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="auto-style3">&nbsp;</p>
+			<p class="auto-style3">&nbsp;</p>
+			<p class="auto-style3">&nbsp;</p>
+			<p class="auto-style3">&nbsp;</p>
+			<p class="auto-style3">&nbsp;</p>
+			<p class="auto-style3">&nbsp;</p>
+			<p class="auto-style3">Digital Minds Uganda</p>
+            <p class="auto-style3">© 2026 Digital minds Uganda</p>
+            <table style="width: 8%" align="center">
+				<tr>
+					<td style="width: 211px">
+					<a href="http://x.com/med2025x">
+					<img alt="" height="20" src="images/sl_z_072523_61700_01.jpg" width="20" class="auto-style2"></a></td>
+					<td style="width: 210px">
+					<a href="http://www.instagram.com/meddisonofficial?igsh=eDc5djh6bGQ4cXZ0">
+					<img alt="" height="20" src="images/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png" width="32" class="auto-style2"></a></td>
+					<td style="width: 210px">
+					<a href="http://www.tiktok.com/@kmeddison?_r=1&amp;_t=ZM-930mKquv6JY">
+					<img alt="" height="20" src="images/vecteezy_tiktok-png-icon_16716485.png" width="20" class="auto-style2"></a></td>
+					<td style="width: 210px">
+					<a href="http://www.youtube.com/@digitalmindsuganda">
+					<img alt="" height="30" src="images/vecteezy_youtube-logo-png-youtube-icon-transparent_18930572.png" width="30" class="auto-style2"></a></td>
+				</tr>
+			</table>
+        </div>
+    </footer>
+
+   
+</body>
+</html>

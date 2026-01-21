@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6920341232732247"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Digital Minds Uganda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfbf7;
+            color: #1f2937;
+        }
+
+        .contact-card {
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #4f46e5;
+            ring: 2px;
+            ring-color: #c7d2fe;
+        }
+    .auto-style1 {
+		text-align: center;
+	}
+    </style>
+    <!-- Chosen Palette: "Warm Professional" - Grounded in ivory and indigo to maintain brand consistency with the main platform while ensuring a welcoming atmosphere for user inquiries. -->
+    <!-- Application Structure Plan: 
+         1. Interactive Map/Office Section: Showcases global and local presence using clickable cards.
+         2. Dynamic Support Form: A structured input area with real-time feedback simulation.
+         3. FAQ Toggle Section: Addresses common user concerns (Subscriptions, Content Uploads) to minimize direct support requests.
+         4. Social Connectivity: Direct links to community hubs. -->
+    <!-- Visualization & Content Choices:
+         - Support Categories (JS Array): Provides a dropdown for categorized inquiries.
+         - FAQ Accordion (Vanilla JS): Show/hide logic for better information density.
+         - Form Success Simulation (JS): Feedback loop for user interaction.
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Simple Nav -->
+    <nav class="bg-white border-b border-gray-100 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+    <img alt="company logo" height="auto" src="images/digital%20minds%20Uganda%20vvv.png" width="150">
+                <span class="font-bold text-indigo-900 text-lg">Digital Minds Uganda</span>
+            </div>
+           
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <!-- Header -->
+        <section class="bg-indigo-900 text-white py-16 px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">Get in Touch</h1>
+                <p class="text-indigo-100 text-lg">Have questions about your subscription, educational content, or partnership opportunities? Our global team is here to help.</p>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-6 -mt-10 mb-20">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Contact Info Column -->
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="contact-card bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="text-indigo-600 text-3xl mb-4">📍</div>
+                        <h3 class="font-bold text-gray-900 mb-2">Kampala Headquarters</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Mukono district<br>
+                            Kampala, Uganda<br>
+                            P.O. Box 2525</p>
+                    </div>
+
+                    <div class="contact-card bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="text-indigo-600 text-3xl mb-4">📧</div>
+                        <h3 class="font-bold text-gray-900 mb-2">Email Support</h3>
+                        <p class="text-sm text-gray-600">General: 
+						kagumyameddy@gmail.com</p>
+                        <p class="text-sm text-gray-600 font-bold mt-1">Billing: accounts@digitalminds.ug</p>
+                    </div>
+
+                    <div class="contact-card bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="text-indigo-600 text-3xl mb-4">📱</div>
+                        <h3 class="font-bold text-gray-900 mb-2">Mobile Money Support</h3>
+                        <p class="text-sm text-gray-600">MTN: +256 786562030</p>
+                        <p class="text-sm text-gray-600">Airtel: +256 709539676</p>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                        <div class="p-8 md:p-12">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-6">Send us a message</h2>
+                            <form id="supportForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
+                                        <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white transition" placeholder="John Doe">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                                        <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white transition" placeholder="john@example.com">
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">Inquiry Category</label>
+                                    <select class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white transition">
+                                        <option>Subscription & Billing</option>
+                                        <option>Education Content Access</option>
+                                        <option>Technical Issue / Bug</option>
+                                        <option>Partnership/Advertising</option>
+                                        <option>Content Takedown Request</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">Your Message</label>
+                                    <textarea rows="5" required class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white transition" placeholder="How can we help you today?"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-indigo-700 transition transform active:scale-95">
+                                    Send Message
+                                </button>
+                            </form>
+                            
+                            <div id="successMsg" class="hidden mt-6 p-4 bg-green-50 border border-green-200 rounded-xl text-green-800 text-center animate-pulse">
+                                <span class="text-xl mr-2">✅</span> Message sent! Our team will respond within 24 hours.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Mini Section -->
+                    <div class="mt-12">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6">Quick Help</h2>
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                                <button onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+                                    <span class="font-semibold">How do I pay with MTN Mobile Money?</span>
+                                    <span id="icon-1" class="text-gray-400">+</span>
+                                </button>
+                                <div id="faq-1" class="hidden px-6 pb-4 text-sm text-gray-600">
+                                    Select the "Mobile Money" option in the checkout. You will receive a prompt on your phone to enter your PIN to authorize the $25 or $125 payment.
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                                <button onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition">
+                                    <span class="font-semibold">Is the first week really free?</span>
+                                    <span id="icon-2" class="text-gray-400">+</span>
+                                </button>
+                                <div id="faq-2" class="hidden px-6 pb-4 text-sm text-gray-600">
+                                    Yes! All new users get 7 days of full access to both entertainment and educational content. No payment is required until the trial ends.
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="auto-style1">
+    </main>
+    </div>
+<a href="home.html">← Back to Platform</a>
+    
+    <footer class="bg-white border-t border-gray-100 py-10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex justify-center gap-6 mb-6">
+                <br><br><br><br><br><br>
+                </div>
+            <table style="width: 8%" align="center">
+				<tr>
+					<td style="width: 211px">
+					<a href="http://x.com/med2025x">
+					<img alt="" height="20" src="images/sl_z_072523_61700_01.jpg" width="20" class="auto-style2"></a></td>
+					<td style="width: 210px">
+					<a href="http://www.instagram.com/meddisonofficial?igsh=eDc5djh6bGQ4cXZ0">
+					<img alt="" height="20" src="images/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png" width="32" class="auto-style2"></a></td>
+					<td style="width: 210px">
+					<a href="http://www.tiktok.com/@kmeddison?_r=1&amp;_t=ZM-930mKquv6JY">
+					<img alt="" height="20" src="images/vecteezy_tiktok-png-icon_16716485.png" width="20" class="auto-style2"></a></td>
+					<td style="width: 210px">
+					<a href="http://www.youtube.com/@digitalmindsuganda">
+					<img alt="" height="30" src="images/vecteezy_youtube-logo-png-youtube-icon-transparent_18930572.png" width="30" class="auto-style2"></a></td>
+				</tr>
+			</table>
+
+            <p class="auto-style1">Digital Minds Uganda</p>
+			<p class="auto-style1">© 2026 Digital Minds Uganda.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFaq(id) {
+            const content = document.getElementById(`faq-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.innerText = '−';
+            } else {
+                content.classList.add('hidden');
+                icon.innerText = '+';
+            }
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const success = document.getElementById('successMsg');
+            
+            btn.disabled = true;
+            btn.innerText = "Processing...";
+            btn.classList.add('opacity-50');
+
+            // Simulate API Delay
+            setTimeout(() => {
+                e.target.classList.add('hidden');
+                success.classList.remove('hidden');
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
+
+
